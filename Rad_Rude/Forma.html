@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+	<head>
+		<title>Forma</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Martina Štibohar">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			body { margin: 1em; }
+			form { width: 300px; }
+body{
+background: #90EE90;
+color: black;
+font-size: 18px;
+font-family: Garamond;
+margin-left: 72px;
+margin-right: 72px;
+margin-top: 20px;
+}
+p.copyright {
+font-family: Arial;
+font-size: 12px;
+color: black;
+background: green;
+}
+{
+background-image: url("Karta.jpg");
+background-attachment: fixed;
+background-position: top right;
+background-repeat: no-repeat;
+}
+</style>
+</head>	
+<body>
+    <a href="Index.html">Home</a>
+	<a href="Rudnik.html">Rudnik Sveta Barbara</a>
+	<a href="RKRudar.html">Rukometni klub Rudar</a>
+	<a href="Greblica.html">Rudarska greblica</a>
+	<a href="KUDostrc.html">KUD Oštrc</a>
+	<a href="Galerija.html">Galerija</a>
+	<hr/>
+	
+	<!--<img src="Galerija/karta.jpg" width="300" height="300" alt="Karta" align="bottom right" hspace="20" vspace="25"/>-->
+	
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44528.07213121103!2d15.637670049915458!3d45.77109990094006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765cb73bd6f4c33%3A0x9bc5f72f2a9f977!2s10430%2C+Rude!5e0!3m2!1shr!2shr!4v1527530985810" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>  
+	<form action="showuser2.php" method="post">
+		    <div class="form-group">
+				<label for="fname">Ime *</label>
+				<input type="text" id="fname" name="firstname" placeholder="Vaše ime.." class="form-control" required>
+			</div>
+			<div class="form-group">
+				<label for="lname">Prezime *</label>
+				<input type="text" id="lname" name="lastname" placeholder="Vaše prezime.." class="form-control" required>
+			</div>
+			<div class="form-group">	
+				<label for="email">Vaš E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="Vaš e-mail.." class="form-control" required>
+			</div>
+			<div class="form-group">	
+			<label for="country">Država</label>
+				<select id="country" name="country" class="form-control">
+				  <option value="">Molimo odaberite</option>
+				  <option value="DE">Deutschland</option>
+				  <option value="HR" selected>Croatia</option>
+				  <option value="AU">Austria</option>
+				  <option value="SLO">Slovenia</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<input type="radio" name="gender" value="Male"> Muško<br>
+				<input type="radio" name= "gender" value="Female"> Žensko<br>
+			</div>
+			
+			<div class="form-group">
+				<label for="message">Message</label>
+				<textarea id="message" name="message" placeholder="Napšite nešto..." class="form-control"></textarea>
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-default" value="Pošalji"> 
+				<input type="reset" class="btn btn-default" value="Poništi">
+			</div>
+		</form>
+		</body>
+		<footer>
+			<p>Copyright&copy; 2018 Martina Štibohar. All rights reserved.</p>
+		</footer>
+</html>
